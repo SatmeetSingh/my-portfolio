@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  color: #000000;
+}
+
+@media only screen and (max-width: 999px) {
+  .btn1 {
+    width: 80%;
+    font-size: 25px;
+    padding-block: 8px;
+  }
+}
