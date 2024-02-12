@@ -4,16 +4,23 @@ import { FiGithub } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
 import styles from "./home.module.css";
 import Quote from "./Quote";
+import Skills from "../Skills/Skills";
 function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.line}></div>
       <div className={styles.icon}>
-        <a href="https://github.com/SatmeetSingh">
+        <a
+          href="https://github.com/SatmeetSingh"
+          rel="noreferrer"
+          target="_blank"
+        >
           <FiGithub color="green" size={25} />
         </a>
         <a
           href="https://www.linkedin.com/in/satmeet-singh-a025a516a/"
+          rel="noreferrer"
+          target="_blank"
           className={styles.linkdin}
         >
           <CiLinkedin color="green" size={30} />
@@ -51,6 +58,7 @@ function Home() {
         </div>
       </div>
       <Quote />
+      <Skills />
     </div>
   );
 }

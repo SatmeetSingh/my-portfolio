@@ -1,0 +1,73 @@
+.skill {
+  margin-top: 200px;
+  width: 100%;
+}
+
+.intro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  font-weight: 700;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.334);
+}
+
+.intro h3 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 84%;
+  margin-left: 8%;
+  position: relative;
+}
+
+@media only screen and (max-width: 993px) {
+  .boxes {
+    flex-direction: column;
+    gap: 200px;
+  }
+  .intro {
+    width: 100%;
+  }
+}
+
+.boxes h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+.name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.items .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgba(4, 120, 4, 0.77);
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 3px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 20;
+  bottom: -30px;
+  left: 5%;
+}
+
+.items:hover .tooltiptext {
+  visibility: visible;
+}

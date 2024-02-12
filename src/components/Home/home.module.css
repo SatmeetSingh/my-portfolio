@@ -1,5 +1,5 @@
 .home {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .intro {
@@ -16,7 +16,7 @@
   left: 5%;
   width: 2px;
   height: 120px;
-  background-color: rgb(135, 135, 218);
+  background-color: rgba(135, 135, 218, 0.7);
 }
 
 .icon {
@@ -28,6 +28,16 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  z-index: auto;
+}
+
+.icon a {
+  cursor: pointer;
+  z-index: 10;
+}
+
+.icon a:hover {
+  transform: scale(1.2);
 }
 
 .img {
@@ -115,7 +125,6 @@
     font-size: 2rem;
   }
   .text {
-    /* visibility: hidden; */
     display: none;
   }
   .btn {
@@ -155,11 +164,13 @@
 .bg {
   background: url("./images/code.jpg");
   height: 70vh;
-  width: 110%;
+  width: 100%;
   margin-top: 60px;
-  margin-left: -30px;
+  /* margin-left: -30px; */
   /* filter: blur(3px); */
   transform: rotateZ(-5deg);
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.6);
+  position: relative;
 }
 
 .blur {
@@ -177,16 +188,21 @@
   align-items: center;
   text-align: center;
   margin-inline: 10%;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bolder;
-  margin-top: 50px;
-  color: rgba(96, 94, 94, 0.7);
-  position: relative;
+  margin-top: 60px;
+  /* color: rgba(96, 94, 94, 0.7); */
 }
 
+@media only screen and (min-width: 999px) {
+  .blur p {
+    font-size: 50px;
+    margin-top: 60px;
+  }
+}
 .blur h3 {
   transform: rotateZ(5deg);
   margin-top: 30px;
   font-size: 25px;
-  color: rgb(198, 192, 192);
+  color: rgb(170, 164, 164);
 }

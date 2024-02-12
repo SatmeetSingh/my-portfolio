@@ -9,7 +9,6 @@ function DarkMode() {
 
   const handleEvent = () => {
     dispatch(setMode(!Dark));
-    console.log(Dark);
   };
   return (
     <button
