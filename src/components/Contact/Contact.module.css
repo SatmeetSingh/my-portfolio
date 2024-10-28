@@ -1,0 +1,44 @@
+.contact {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.intro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.334);
+}
+
+.contactBox {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 84%;
+  margin-left: 8%;
+  position: relative;
+  border: 1px soild red;
+}
+
+@media only screen and (max-width: 993px) {
+  .intro {
+    width: 100%;
+  }
+}
+
+.img {
+  width: 550px;
+  height: 400px;
+  background: url('./images/ContactUs.png');
+  background-repeat: no-repeat;
+  background-position: 60%;
+  transition: 1s ease-in-out;
+}

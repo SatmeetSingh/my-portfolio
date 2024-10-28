@@ -25,15 +25,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 84%;
+  width: 86%;
   margin-left: 8%;
   position: relative;
+  gap: 5px;
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 1053px) {
   .boxes {
     flex-direction: column;
-    gap: 200px;
+    gap: 150px;
   }
   .intro {
     width: 100%;

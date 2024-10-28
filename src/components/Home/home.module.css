@@ -44,7 +44,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: url("./images/myPhoto.jpg");
+  background: url('./images/myPhoto.jpg');
   background-repeat: no-repeat;
   background-position: center;
   transition: 1s ease-in-out;
@@ -162,7 +162,7 @@
 }
 
 .bg {
-  background: url("./images/code.jpg");
+  background: url('./images/code.jpg');
   height: 70vh;
   width: 100%;
   margin-top: 60px;

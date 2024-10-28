@@ -1,0 +1,62 @@
+.project {
+  margin-top: 150px;
+  width: 100%;
+}
+
+.intro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.334);
+}
+
+.intro h3 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.projectBoxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 84%;
+  margin-left: 8%;
+  position: relative;
+  border: 1px soild red;
+}
+
+.box {
+  width: 30%;
+  height: 30px;
+  background-color: black;
+}
+
+@media only screen and (max-width: 993px) {
+  .intro {
+    width: 100%;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.text {
+  margin-top: 10px;
+  text-align: center;
+  width: 90%;
+  font-size: 1.1rem;
+  line-height: 110%;
+  font-family: poppins-regular;
+  transition: 1s ease-in-out;
+  text-align: left;
+}

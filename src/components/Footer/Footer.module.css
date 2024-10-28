@@ -1,0 +1,52 @@
+.Footer {
+  width: 100%;
+  margin-top: 100px;
+  background-color: rgb(33, 29, 23);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.text {
+  margin-left: 8%;
+  max-width: 22%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.myLine {
+  width: 86%;
+  margin-top: 10px;
+  border: 1px solid white;
+  margin-bottom: 5px;
+  margin-left: 7%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.item1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.item:hover {
+  color: rgb(22, 134, 22);
+  transition: 100ms ease-in;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}

@@ -1,0 +1,58 @@
+.about {
+  margin-top: 150px;
+  width: 100%;
+}
+
+.img {
+  width: 300px;
+  height: 400px;
+  background: url('./images/myOtherPhoto.png');
+  background-repeat: no-repeat;
+  background-position: 40%;
+  transition: 1s ease-in-out;
+}
+
+.intro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.334);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 84%;
+  margin-left: 8%;
+  position: relative;
+  border: 1px soild red;
+}
+
+@media only screen and (max-width: 993px) {
+  .intro {
+    width: 100%;
+  }
+}
