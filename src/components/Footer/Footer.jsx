@@ -6,13 +6,15 @@ import { MdEmail } from 'react-icons/md';
 import { FaMapLocationDot } from 'react-icons/fa6';
 import { FiGithub } from 'react-icons/fi';
 import { CiLinkedin } from 'react-icons/ci';
+import { useSelector } from 'react-redux';
 
 function Footer() {
+  const Dark = useSelector((state) => state.navbar.darkMode);
   return (
     <div className={styles.Footer}>
       <div className="flex justify-around">
         <div className={styles.text}>
-          <p className="font-semibold  text-xl mb-2">Satmeet's Portfolio</p>
+          <p className="font-semibold  text-2xl mb-2">Satmeet's Portfolio</p>
           <span className="mb-2">
             Thank you for visiting my personal portfolio website. Connect with
             me over socials.

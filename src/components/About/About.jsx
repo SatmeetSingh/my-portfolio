@@ -1,12 +1,22 @@
+import { useSelector } from 'react-redux';
 import Button, { SmallButton } from '../../utils/Button';
 import styles from './About.module.css';
+import DarkMode from '../../utils/DarkMode';
 
 function About() {
+  const Dark = useSelector((state) => state.navbar.darkMode);
   return (
-    <div className={styles.about}>
+    <div
+      className={`${styles.about}
+         ${Dark ? 'bg-white/65 text-black' : 'bg-black/75 text-white'}
+         `}
+    >
       <div className={styles.intro}>
         <p>
-          <span className="text-[Orange]">&lt;</span>About Me
+          <span className="text-[Orange]">&lt;</span>
+          <span className={` ${Dark ? 'text-black ' : 'text-white'}`}>
+            About Me
+          </span>
           <span className="text-[Orange]">/&gt;</span>
         </p>
       </div>

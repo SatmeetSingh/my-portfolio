@@ -9,6 +9,7 @@ import Project from '../Projects/Project';
 import About from '../About/About';
 import ContactMe from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
@@ -50,14 +51,28 @@ function Home() {
           </p>
         </div>
         <div className={styles.btn}>
-          <Button>
-            <CiMail size={25} />
-            Contact me
-          </Button>
-          <Button>
-            <FiGithub />
-            My Projects
-          </Button>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="hover:scale-125 transition-all duration-200"
+          >
+            <Button>
+              <CiMail size={25} />
+              Contact me
+            </Button>
+          </Link>
+          <Link
+            to="project"
+            smooth={true}
+            duration={500}
+            className="hover:scale-125 transition-all duration-200"
+          >
+            <Button>
+              <FiGithub />
+              My Projects
+            </Button>
+          </Link>
         </div>
       </div>
 

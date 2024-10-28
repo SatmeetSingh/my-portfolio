@@ -5,8 +5,10 @@ import { IoIosSend } from 'react-icons/io';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import PopMessage from '../../utils/PopMessage';
+import { useSelector } from 'react-redux';
 
 function ContactMe() {
+  const Dark = useSelector((state) => state.navbar.darkMode);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -119,7 +121,9 @@ function ContactMe() {
               onSubmit={handleSubmit}
             >
               <div className="flex flex-col gap-1">
-                <label for="name">Name:</label>
+                <label for="name" className="text-black">
+                  Name:
+                </label>
                 <input
                   type="text"
                   id="name"
@@ -135,7 +139,9 @@ function ContactMe() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <label for="email">Email:</label>
+                <label for="email" className="text-black">
+                  Email:
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -152,7 +158,9 @@ function ContactMe() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <label for="phone">Phone:</label>
+                <label for="phone" className="text-black">
+                  Phone:
+                </label>
                 <input
                   type="tel"
                   id="phone"
@@ -169,7 +177,9 @@ function ContactMe() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <label for="message">Message:</label>
+                <label for="message" className="text-black">
+                  Message:
+                </label>
                 <textarea
                   id="message"
                   name="message"

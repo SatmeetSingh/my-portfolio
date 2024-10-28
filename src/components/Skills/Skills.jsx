@@ -10,6 +10,7 @@ import {
   SiNestjs,
 } from 'react-icons/si';
 import { DiMsqlServer } from 'react-icons/di';
+import { useSelector } from 'react-redux';
 
 let skills = [
   {
@@ -63,11 +64,15 @@ let skills = [
 ];
 
 function Skills() {
+  const Dark = useSelector((state) => state.navbar.darkMode);
   return (
     <div className={styles.skill}>
       <div className={styles.intro}>
         <p>
-          <span className="text-[orange]">&lt;</span>Skills
+          <span className="text-[orange]">&lt;</span>
+          <span className={` ${Dark ? 'text-white ' : 'text-black'}`}>
+            Skills
+          </span>
           <span className="text-[orange]">/&gt;</span>
         </p>
         <h3 className="mb-16">My TechStack and Skills</h3>
@@ -76,7 +81,10 @@ function Skills() {
         <div className="h-auto rounded-2xl px-8 py-16 pt-32 grid grid-cols-4 gap-10 relative z-10 max-lg:w-full  max-lg:pt-32 bg-[#f6e7e7] dark-shadow border-2 shadow-[10px_25px_50px_-5px_rgba(0,0,0,0.5)]  min-[1921px]:grid-cols-4   min-[2250px]:grid-cols-5 max-lg:p-8 max-lg:gap-5">
           <div className="absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl ">
             <p className="font-black text-4xl">
-              <span className="text-[orange]">&lt;</span>WebDevelopment
+              <span className="text-[orange]">&lt;</span>
+              <span className={` ${Dark ? 'text-black' : 'text-black'}`}>
+                WebDevelopment
+              </span>
               <span className="text-[orange]">/&gt;</span>
             </p>
           </div>

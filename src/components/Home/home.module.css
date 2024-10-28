@@ -1,5 +1,5 @@
 .home {
-  margin-top: 60px;
+  overflow-x: hidden;
 }
 
 .intro {
@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 60px;
 }
 
 .line {

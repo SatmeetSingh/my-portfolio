@@ -9,7 +9,6 @@ import { GoPerson, GoPersonAdd } from 'react-icons/go';
 import { GiBlackBook, GiOpenBook } from 'react-icons/gi';
 import { LuMail, LuMailOpen } from 'react-icons/lu';
 import { useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   const Dark = useSelector((state) => state.navbar.darkMode);
