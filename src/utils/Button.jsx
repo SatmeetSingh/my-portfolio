@@ -18,7 +18,7 @@ export function SmallButton({ children }) {
 
 export function SmallBox({ children }) {
   return (
-    <button className="text-white drop-shadow-2xl border-none py-2 px-4 rounded-lg lg:text-[1rem] max-lg:text-[0.8rem] flex flex-row justify-center items-center cursor-pointer shadow-xl hover:scale-100 hover:drop-shadow-xl transition-all duration-200 w-max hover:bg-[#40A2E3] bg-[#FF8911]">
+    <button className="text-white drop-shadow-2xl border-none py-1 px-2 rounded-lg lg:text-[1rem] max-lg:text-[0.8rem] flex flex-row justify-center items-center cursor-pointer shadow-xl hover:scale-100 hover:drop-shadow-xl transition-all duration-200 w-max hover:bg-[#40A2E3] bg-[#FF8911]">
       {children}
     </button>
   );
