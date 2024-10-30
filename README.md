@@ -2,12 +2,12 @@
 
 Welcome to my portfolio repository! This space highlights my projects, skills, and experience as a developer. Dive in to explore my work, and feel free to connect if you have any questions or ideas for collaboration.
 
-![Portfolio Screenshot](link-to-your-image.png)
+![Portfolio Screenshot](./public/images/Improved.png)
+![Portfolio Screenshot](./public/images/SkillPage.png) <!-- Replace this link with the actual URL of your image -->
 
 ## 📋 Table of Contents
 
 - [About Me](#about-me)
-- [Portfolio Screenshot](#portfolio-screenshot)
 - [Technologies & Skills](#technologies--skills)
 - [Contact](#contact)
 
@@ -21,15 +21,6 @@ Hello! I'm Satmeet Singh, a dedicated developer with expertise in both frontend 
 - **Experience**: 1+ year in frontend (React.js) and backend (Nest.js)
 - **Education**: Bachelor's in Electronics and Communication Engineering from NIT Kurukshetra
 - **Interests**: Web Development, Problem-Solving
-
----
-
-## 🌐 Portfolio Screenshot
-
-Here’s a preview of my portfolio:
-
-![Portfolio Screenshot](Improved.png) <!-- Replace this link with the actual URL of your image -->
-![Portfolio Screenshot](SkillPage.png) <!-- Replace this link with the actual URL of your image -->
 
 ---
 
