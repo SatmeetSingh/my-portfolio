@@ -3,7 +3,6 @@
 Welcome to my portfolio repository! This space highlights my projects, skills, and experience as a developer. Dive in to explore my work, and feel free to connect if you have any questions or ideas for collaboration.
 
 ![Portfolio Screenshot](./public/images/Improved.png)
-![Portfolio Screenshot](./public/images/SkillPage.png) <!-- Replace this link with the actual URL of your image -->
 
 ## 📋 Table of Contents
 
@@ -41,8 +40,8 @@ Here’s a quick overview of the technologies and tools I use:
 
 I’m always open to collaborations, freelance projects, and professional connections. Feel free to reach out through any of the channels below:
 
-- **Email**: [your.email@example.com](mailto:satmeetarora@gmail.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/satmeet-singh-a025a516a/)
+- **Email**: [My Email](mailto:satmeetarora@gmail.com)
+- **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/satmeet-singh-a025a516a/)
 <!-- - **Twitter**: [Your Twitter Profile](https://twitter.com/yourusername) -->
 
 Thank you for exploring my portfolio! 😊
