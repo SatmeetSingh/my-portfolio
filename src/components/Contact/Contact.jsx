@@ -112,8 +112,8 @@ function ContactMe() {
         </p>
       </div>
       <div className={styles.contactBox}>
-        <div className="h-auto rounded-2xl px-8 py-8 lg:flex gap-6 z-10 dark-shadow border-2 shadow-[10px_25px_50px_-5px_rgba(0,0,0,0.5)] bg-[#f6e7e7] w-[80%]  max-lg:grid max-lg:grid-cols-2 max-md:flex  max-md:flex-col ">
-          <div className="w-[50%]">
+        <div className="h-auto rounded-2xl px-8 py-8 lg:flex gap-6 z-10 dark-shadow border-2 shadow-[10px_25px_50px_-5px_rgba(0,0,0,0.5)] bg-[#f6e7e7] w-[80%]   max-md:flex  max-md:flex-col ">
+          <div className="w-[50%]  max-md:w-[100%]  max-lg:w-[70%] ">
             <form
               action="your-form-endpoint"
               method="POST"
@@ -207,7 +207,7 @@ function ContactMe() {
               )}
             </form>
           </div>
-          <div className={`${styles.img} `}></div>
+          <div className={`${styles.img} max-lg:hidden`}></div>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ function Footer() {
   const Dark = useSelector((state) => state.navbar.darkMode);
   return (
     <div className={styles.Footer}>
-      <div className="flex justify-around">
+      <div className="flex justify-around  max-md:text-base">
         <div className={styles.text}>
           <p className="font-semibold  text-2xl mb-2">Satmeet's Portfolio</p>
           <span className="mb-2">

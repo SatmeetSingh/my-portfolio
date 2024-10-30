@@ -57,7 +57,7 @@
   width: 90%;
   font-size: 1.1rem;
   line-height: 110%;
-  font-family: poppins-regular;
+  /* font-family: poppins-regular; */
   transition: 1s ease-in-out;
   text-align: left;
   transition: transform 0.5s ease, opacity 0.5s ease;

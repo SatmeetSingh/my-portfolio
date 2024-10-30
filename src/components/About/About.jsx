@@ -8,7 +8,7 @@ function About() {
   return (
     <div
       className={`${styles.about}
-         ${Dark ? 'bg-white/65 text-black' : 'bg-black/75 text-white'}
+         ${Dark ? 'bg-white/65 text-black' : 'bg-[#222222] text-white'}
          `}
     >
       <div className={styles.intro}>
@@ -21,7 +21,7 @@ function About() {
         </p>
       </div>
       <div className={styles.text}>
-        <div className="h-auto rounded-2xl px-8 py-16 pt-8 w-[50%]  max-lg:w-full  max-lg:pt-32 flex flex-col gap-8">
+        <div className="h-auto rounded-2xl px-8 py-16 pt-8 w-[50%]  max-lg:w-full  max-lg:pt-10 flex flex-col gap-8">
           <h3 className="text-4xl">Satmeet Singh</h3>
           <div className="flex flex-col gap-4 text-base">
             <h2>
@@ -54,7 +54,7 @@ function About() {
           </SmallButton>
         </div>
         <div
-          className={`${styles.img}  shadow-slate-700  hover:drop-shadow-xl rounded-2xl  dark-shadow shadow-[10px_15px_40px_-5px_rgba(0,0,0,0.5)] `}
+          className={`${styles.img}  shadow-slate-700  hover:drop-shadow-xl rounded-2xl  dark-shadow shadow-[10px_15px_40px_-5px_rgba(0,0,0,0.5)] max-lg:hidden`}
         ></div>
       </div>
     </div>
