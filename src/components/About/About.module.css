@@ -7,7 +7,7 @@
 .img {
   width: 300px;
   height: 400px;
-  background: url('images/myOtherPhoto.png');
+  background: url('/images/myOtherPhoto.png');
   background-repeat: no-repeat;
   background-position: 40%;
   transition: 1s ease-in-out;
