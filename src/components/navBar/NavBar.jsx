@@ -26,7 +26,7 @@ function NavBar() {
             to="/"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-100 cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-150 cursor-pointer"
           >
             Home
           </Link>
@@ -34,7 +34,7 @@ function NavBar() {
             to="skills"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-100 cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-150 cursor-pointer"
           >
             Skills
           </Link>
@@ -42,7 +42,7 @@ function NavBar() {
             to="project"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-100  cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-150  cursor-pointer"
           >
             Projects
           </Link>
@@ -50,7 +50,7 @@ function NavBar() {
             to="about"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-100 cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-150 cursor-pointer"
           >
             About me
           </Link>
@@ -58,7 +58,7 @@ function NavBar() {
             to="contact"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-100 cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-150 cursor-pointer"
           >
             Contact
           </Link>
@@ -75,7 +75,7 @@ function NavBar() {
             to="/"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-200"
+            className="hover:scale-125 transition-all  ease-in-out duration-200"
           >
             {a ? <IoHomeOutline size={25} /> : <CiHome size={25} />}
           </Link>
@@ -83,7 +83,7 @@ function NavBar() {
             to="skills"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-200"
+            className="hover:scale-125 transition-all  ease-in-out duration-200"
           >
             {a ? <FiLayers size={25} /> : <BsLayers size={25} />}
           </Link>
@@ -91,7 +91,7 @@ function NavBar() {
             to="project"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-200"
+            className="hover:scale-125 transition-all  ease-in-out duration-200"
           >
             {a ? <GiOpenBook size={25} /> : <GiBlackBook size={25} />}
           </Link>
@@ -99,7 +99,7 @@ function NavBar() {
             to="about"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-200"
+            className="hover:scale-125 transition-all ease-in-out duration-200"
           >
             {a ? <GoPersonAdd size={25} /> : <GoPerson size={25} />}
           </Link>
@@ -107,7 +107,7 @@ function NavBar() {
             to="contact"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-200"
+            className="hover:scale-125 transition-all ease-in-out duration-200"
           >
             {a ? <LuMailOpen size={25} /> : <LuMail size={25} />}
           </Link>

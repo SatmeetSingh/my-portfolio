@@ -55,7 +55,7 @@ function Home() {
             to="contact"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-200"
+            className="hover:scale-110 transition-all duration-200"
           >
             <Button>
               <CiMail size={25} />
@@ -66,7 +66,7 @@ function Home() {
             to="project"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all duration-200"
+            className="hover:scale-110 transition-all duration-200"
           >
             <Button>
               <FiGithub />
