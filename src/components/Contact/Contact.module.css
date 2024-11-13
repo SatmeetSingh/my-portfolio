@@ -37,7 +37,7 @@
 .img {
   width: 550px;
   height: 400px;
-  background: url('./images/ContactUs.png');
+  background: url('/images/ContactUs.png');
   background-repeat: no-repeat;
   background-position: 60%;
   transition: 1s ease-in-out;
