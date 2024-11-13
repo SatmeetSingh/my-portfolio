@@ -24,7 +24,7 @@ let projectsArray = [
     Description:
       'A dynamic web application built with React, designed to showcase my skills in frontend development and UI/UX design. This project features responsive design, interactive components, and seamless user experiences, highlighting my ability to create visually appealing and functional applications.',
     link: 'https://github.com/SatmeetSingh/my-portfolio',
-    page: '',
+    page: 'https://satmeetsingh-webdeveloper.vercel.app',
   },
   {
     Title: 'Whispers-of-Destiny RPGTextGame',
