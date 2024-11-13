@@ -15,6 +15,18 @@
   gap: 14px;
 }
 
+@media screen and (max-width: 768px) {
+  .text {
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 2px solid white; */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+  }
+}
+
 .myLine {
   width: 86%;
   margin-top: 10px;

@@ -13,7 +13,7 @@ function App() {
       className={` min-h-[100%] transition-all 
     duration-500  
     ease-in-out  
-    ${Dark ? 'bg-[#222222] text-white ' : 'bg-white/75 text-black'} h-[500vh]`}
+    ${Dark ? 'bg-[#222222] text-white ' : 'bg-white/75 text-black'} h-[100%]`}
     >
       <div className="">
         <BrowserRouter>

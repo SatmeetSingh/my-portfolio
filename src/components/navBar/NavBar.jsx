@@ -56,7 +56,8 @@ function NavBar() {
           </Link>
           <Link
             to="contact"
-            // smooth={true} duration={500}
+            smooth={true}
+            duration={500}
             className="hover:scale-125 transition-all duration-100 cursor-pointer"
           >
             Contact

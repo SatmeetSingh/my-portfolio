@@ -12,7 +12,7 @@ function Footer() {
   const Dark = useSelector((state) => state.navbar.darkMode);
   return (
     <div className={styles.Footer}>
-      <div className="flex justify-around  max-md:text-base">
+      <div className="flex justify-around  max-md:text-base max-md:flex-col max-md:items-center max-md:w-[100%]   ">
         <div className={styles.text}>
           <p className="font-semibold  text-2xl mb-2">Satmeet's Portfolio</p>
           <span className="mb-2">
@@ -21,7 +21,7 @@ function Footer() {
           </span>
           <spam>Keep Rising 🚀.</spam>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 max-md:hidden">
           <h1 className="font-medium text-2xl mb-2">Quick Links</h1>
           <Link
             to="/"
@@ -69,7 +69,7 @@ function Footer() {
             Contact
           </Link>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 ">
           <h1 className="font-medium text-2xl mb-2">Contact Info</h1>
           <h2 className={styles.item1}>
             <FaPhone color="green" size={15} />

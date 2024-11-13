@@ -107,7 +107,9 @@ function ContactMe() {
         <p className="flex items-center justify-center gap-2">
           <span className="text-[Orange]">&lt;</span>
           <MdContactMail size={25} />
-          Get In Touch
+          <span className={` ${Dark ? 'text-white' : 'text-black'}`}>
+            Get In Touch
+          </span>
           <span className="text-[Orange]">/&gt;</span>
         </p>
       </div>

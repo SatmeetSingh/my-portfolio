@@ -59,7 +59,7 @@ function Home() {
           >
             <Button>
               <CiMail size={25} />
-              Contact me
+              <p>Contact me</p>
             </Button>
           </Link>
           <Link
@@ -70,7 +70,7 @@ function Home() {
           >
             <Button>
               <FiGithub />
-              My Projects
+              <p>My Projects</p>
             </Button>
           </Link>
         </div>
