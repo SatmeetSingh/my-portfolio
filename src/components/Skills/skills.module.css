@@ -62,11 +62,10 @@
   text-align: center;
   border-radius: 3px;
   padding: 3px 0;
-  /* Position the tooltip */
   position: absolute;
   z-index: 20;
   bottom: -30px;
-  left: 5%;
+  left: -5%;
 }
 
 .items:hover .tooltiptext {
