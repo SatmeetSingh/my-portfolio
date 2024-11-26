@@ -16,8 +16,8 @@ function Footer() {
         <div className={styles.text}>
           <p className="font-semibold  text-2xl mb-2">Satmeet's Portfolio</p>
           <span className="mb-2">
-            Thank you for visiting my personal portfolio website. Connect with
-            me over socials.
+            Thank you for visiting my personal portfolio website. Let's connect
+            on social media and build something amazing together.
           </span>
           <span>Keep Rising 🚀.</span>
         </div>
@@ -27,7 +27,7 @@ function Footer() {
             to="/"
             smooth={true}
             duration={500}
-            className={`hover:scale-125 transition-all duration-100 cursor-pointer ${styles.item}`}
+            className={`hover:scale-110 transition-all duration-100 cursor-pointer ${styles.item}`}
           >
             <IoIosArrowDropright />
             Home
@@ -36,7 +36,7 @@ function Footer() {
             to="about"
             smooth={true}
             duration={500}
-            className={`hover:scale-125 transition-all duration-100 cursor-pointer ${styles.item}`}
+            className={`hover:scale-110 transition-all duration-100 cursor-pointer ${styles.item}`}
           >
             <IoIosArrowDropright />
             About
@@ -45,7 +45,7 @@ function Footer() {
             to="skills"
             smooth={true}
             duration={500}
-            className={`hover:scale-125 transition-all duration-100 cursor-pointer ${styles.item}`}
+            className={`hover:scale-110 transition-all duration-100 cursor-pointer ${styles.item}`}
           >
             <IoIosArrowDropright />
             Skills
@@ -54,7 +54,7 @@ function Footer() {
             to="project"
             smooth={true}
             duration={500}
-            className={`hover:scale-125 transition-all duration-100 cursor-pointer ${styles.item}`}
+            className={`hover:scale-110 transition-all duration-100 cursor-pointer ${styles.item}`}
           >
             <IoIosArrowDropright />
             Projects
@@ -63,7 +63,7 @@ function Footer() {
             to="contact"
             smooth={true}
             duration={500}
-            className={`hover:scale-125 transition-all duration-100 cursor-pointer ${styles.item}`}
+            className={`hover:scale-110 transition-all duration-100 cursor-pointer ${styles.item}`}
           >
             <IoIosArrowDropright />
             Contact
