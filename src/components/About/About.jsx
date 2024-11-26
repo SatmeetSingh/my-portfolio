@@ -9,7 +9,7 @@ function About() {
     <div
       className={`${styles.about}
          ${Dark ? 'bg-white/65 text-black' : 'bg-[#222222] text-white'}
-         `}
+         z-10`}
     >
       <div className={styles.intro}>
         <p>

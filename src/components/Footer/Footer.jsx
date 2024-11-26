@@ -19,7 +19,7 @@ function Footer() {
             Thank you for visiting my personal portfolio website. Connect with
             me over socials.
           </span>
-          <spam>Keep Rising 🚀.</spam>
+          <span>Keep Rising 🚀.</span>
         </div>
         <div className="flex flex-col gap-2 max-md:hidden">
           <h1 className="font-medium text-2xl mb-2">Quick Links</h1>

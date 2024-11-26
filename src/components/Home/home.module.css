@@ -1,5 +1,6 @@
 .home {
   overflow-x: hidden;
+  z-index: 1;
 }
 
 .intro {

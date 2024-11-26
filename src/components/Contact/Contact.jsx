@@ -123,7 +123,7 @@ function ContactMe() {
               onSubmit={handleSubmit}
             >
               <div className="flex flex-col gap-1">
-                <label for="name" className="text-black">
+                <label htmlFor="name" className="text-black">
                   Name:
                 </label>
                 <input
@@ -141,7 +141,7 @@ function ContactMe() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <label for="email" className="text-black">
+                <label htmlFor="email" className="text-black">
                   Email:
                 </label>
                 <input
@@ -160,7 +160,7 @@ function ContactMe() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <label for="phone" className="text-black">
+                <label htmlFor="phone" className="text-black">
                   Phone:
                 </label>
                 <input
@@ -179,7 +179,7 @@ function ContactMe() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <label for="message" className="text-black">
+                <label htmlFor="message" className="text-black">
                   Message:
                 </label>
                 <textarea
