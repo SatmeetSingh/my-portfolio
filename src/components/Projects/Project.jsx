@@ -27,6 +27,24 @@ let projectsArray = [
     page: 'https://satmeetsingh-webdeveloper.vercel.app',
   },
   {
+    Title: 'Connectly (Social Media)',
+    Skills: [
+      'C#',
+      'Asp.Net WebAPI',
+      'Typescript',
+      'React',
+      'Redux-toolkit',
+      'Tailwind',
+      'EF',
+      'SQL Server',
+      'Swagger',
+    ],
+    Description:
+      'Instagram clone in making - both Frontend and backend - trying to make it as complete as possible | will be refactoring and improving it as it gets completed - check it',
+    link: 'https://github.com/SatmeetSingh/connectly-backend',
+    page: '',
+  },
+  {
     Title: 'Whispers-of-Destiny RPGTextGame',
     Skills: ['C#', '.net'],
     Description:
@@ -40,6 +58,9 @@ function Project() {
   const Dark = useSelector((state) => state.navbar.darkMode);
 
   const [projects, setProjects] = useState(projectsArray);
+  // eslint-disable-next-line no-unused-vars
+  const [startIndex, setStartIndex] = useState(0);
+
   function handleRightClick() {
     setProjects((prevProj) => {
       const newproj = [
@@ -76,18 +97,21 @@ function Project() {
           >
             <FaRegArrowAltCircleLeft size={30} />
           </p>
-          {projects.map((project) => (
+          {projects.slice(startIndex, startIndex + 3).map((project) => (
             <div
               key={project.Title}
-              className={`cursor-pointer  bg-[#f1e5e5] border-blue-600 flex flex-col gap-4 rounded-2xl px-4 py-4  ${styles.items} hover:scale-100 hover:drop-shadow-xl transition-all duration-200 hover:-translate-y-1  shadow-[10px_25px_50px_-5px_rgba(0,0,0,0.5)] `}
+              className={`cursor-pointer  bg-[#f1e5e5] border-blue-600 flex-1 flex flex-col gap-4 rounded-2xl px-4 py-4  ${styles.items} hover:scale-100 hover:drop-shadow-xl transition-all duration-200 hover:-translate-y-1  shadow-[10px_25px_50px_-5px_rgba(0,0,0,0.5)] `}
             >
               <div className="font-bold text-2xl text-center text-black">
                 <h5>{project.Title}</h5>
               </div>
               {/* <h3>{project.Skills}</h3> */}
-              <div className={`flex flex-wrap gap-2 `}>
+              <div className={`flex flex-wrap gap-2  `}>
                 {project.Skills.map((skill) => (
-                  <div className="flex items-center justify-center" key={skill}>
+                  <div
+                    className="flex items-center justify-center "
+                    key={skill}
+                  >
                     <SmallBox>{skill}</SmallBox>
                   </div>
                 ))}
@@ -99,6 +123,7 @@ function Project() {
                     <a
                       href={project.link}
                       target="_blank"
+                      rel="noreferrer"
                       className="flex gap-1 items-center"
                     >
                       <RiGitRepositoryLine size={18} />
@@ -111,6 +136,7 @@ function Project() {
                     <a
                       href={project.page}
                       target="_blank"
+                      rel="noreferrer"
                       className="flex gap-1 items-center"
                     >
                       <FaExternalLinkAlt size={15} />

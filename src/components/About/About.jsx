@@ -1,7 +1,6 @@
 import { useSelector } from 'react-redux';
-import Button, { SmallButton } from '../../utils/Button';
+import { SmallButton } from '../../utils/Button';
 import styles from './About.module.css';
-import DarkMode from '../../utils/DarkMode';
 
 function About() {
   const Dark = useSelector((state) => state.navbar.darkMode);
@@ -32,10 +31,10 @@ function About() {
               connection setup and manual API testing using Swagger.
             </h2>
             <h2>
-              I'm motivated by solving complex problems and building efficient
-              systems that make a tangible impact. My goal is to further enhance
-              my backend development skills and contribute to innovative,
-              scalable projects.
+              I&apos;m motivated by solving complex problems and building
+              efficient systems that make a tangible impact. My goal is to
+              further enhance my backend development skills and contribute to
+              innovative, scalable projects.
             </h2>
             <h2>Feel free to explore my work and connect!</h2>
           </div>
@@ -48,7 +47,10 @@ function About() {
             </h4>
           </div>
           <SmallButton>
-            <a href="./myresume.pdf" download="Satmeet_Singh_Resume.pdf">
+            <a
+              href="./Satmeet_Singh_Resume.pdf"
+              download="Satmeet_Singh_Resume.pdf"
+            >
               Resume
             </a>
           </SmallButton>

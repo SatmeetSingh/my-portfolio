@@ -8,6 +8,8 @@ import {
   SiDotnet,
   SiPostman,
   SiNestjs,
+  SiCsharp,
+  SiDocker,
 } from 'react-icons/si';
 import { DiMsqlServer } from 'react-icons/di';
 import { useSelector } from 'react-redux';
@@ -60,6 +62,14 @@ let skills = [
   {
     icon: <SiPostman size={60} color="#FF6B00" />,
     name: 'Postman',
+  },
+  {
+    icon: <SiCsharp size={60} color="#E0234E" />,
+    name: 'C#',
+  },
+  {
+    icon: <SiDocker size={60} color="#FF6B00" />,
+    name: 'Docker',
   },
 ];
 

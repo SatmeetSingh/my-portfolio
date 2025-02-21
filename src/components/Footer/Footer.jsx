@@ -6,15 +6,15 @@ import { MdEmail } from 'react-icons/md';
 import { FaMapLocationDot } from 'react-icons/fa6';
 import { FiGithub } from 'react-icons/fi';
 import { CiLinkedin } from 'react-icons/ci';
-import { useSelector } from 'react-redux';
 
 function Footer() {
-  const Dark = useSelector((state) => state.navbar.darkMode);
   return (
     <div className={styles.Footer}>
       <div className="flex justify-around  max-md:text-base max-md:flex-col max-md:items-center max-md:w-[100%]   ">
         <div className={styles.text}>
-          <p className="font-semibold  text-2xl mb-2">Satmeet's Portfolio</p>
+          <p className="font-semibold  text-2xl mb-2">
+            Satmeet&apos;s Portfolio
+          </p>
           <span className="mb-2">
             Thank you for visiting my personal portfolio website. Connect with
             me over socials.
@@ -113,7 +113,7 @@ function Footer() {
       </div>
       <div className={styles.myLine}></div>
       <div className="font-semibold text-center text-sm mb-4">
-        Designed By Satmeet Singh
+        Created By Satmeet Singh
       </div>
     </div>
   );
