@@ -26,15 +26,23 @@ function NavBar() {
             to="/"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all ease-in-out duration-150 cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-250 cursor-pointer"
           >
             Home
+          </Link>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="hover:scale-125 transition-all ease-in-out duration-250 cursor-pointer"
+          >
+            About me
           </Link>
           <Link
             to="skills"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all ease-in-out duration-150 cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-250 cursor-pointer"
           >
             Skills
           </Link>
@@ -42,23 +50,23 @@ function NavBar() {
             to="project"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all ease-in-out duration-150  cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-250  cursor-pointer"
           >
             Projects
           </Link>
           <Link
-            to="about"
+            to="experience"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all ease-in-out duration-150 cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-250 cursor-pointer"
           >
-            About me
+            Experience
           </Link>
           <Link
             to="contact"
             smooth={true}
             duration={500}
-            className="hover:scale-125 transition-all ease-in-out duration-150 cursor-pointer"
+            className="hover:scale-125 transition-all ease-in-out duration-250 cursor-pointer"
           >
             Contact
           </Link>

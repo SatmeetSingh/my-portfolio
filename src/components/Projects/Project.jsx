@@ -6,7 +6,7 @@ import {
   FaRegArrowAltCircleLeft,
   FaRegArrowAltCircleRight,
 } from 'react-icons/fa';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 let projectsArray = [
@@ -60,7 +60,25 @@ function Project() {
   const [projects, setProjects] = useState(projectsArray);
   // eslint-disable-next-line no-unused-vars
   const [startIndex, setStartIndex] = useState(0);
+  const [itemsToShow, setItemsToShow] = useState(3);
 
+  useEffect(() => {
+    const updateItemsToShow = () => {
+      const width = window.innerWidth;
+
+      if (width > 1200) {
+        setItemsToShow(3);
+      } else if (width > 828) {
+        setItemsToShow(2);
+      } else {
+        setItemsToShow(1);
+      }
+    };
+    updateItemsToShow(); // Initial call
+    window.addEventListener('resize', updateItemsToShow); // Listen for window resize
+
+    return () => window.removeEventListener('resize', updateItemsToShow); // Cleanup
+  }, []);
   function handleRightClick() {
     setProjects((prevProj) => {
       const newproj = [
@@ -90,63 +108,65 @@ function Project() {
         <h3 className="mb-16">My Project Gallery</h3>
       </div>
       <div className={styles.projectBoxes}>
-        <div className="h-auto rounded-2xl px-8 py-8 lg:flex gap-6 z-10 dark-shadow border-2  bg-[#f6e7e7]  max-lg:grid max-lg:grid-cols-2 max-md:flex  max-md:flex-col ">
+        <div className="h-auto rounded-2xl px-8 py-8 max-sm:p-4 flex gap-6 z-10 dark-shadow border-2  bg-[#f6e7e7] ">
           <p
             className=" transition-all duration-200 hover:-translate-x-1 hover:scale-x-110  text-black "
             onClick={handleLeftClick}
           >
             <FaRegArrowAltCircleLeft size={30} />
           </p>
-          {projects.slice(startIndex, startIndex + 3).map((project) => (
-            <div
-              key={project.Title}
-              className={`cursor-pointer  bg-[#f1e5e5] border-blue-600 flex-1 flex flex-col gap-4 rounded-2xl px-4 py-4  ${styles.items} hover:scale-100 hover:drop-shadow-xl transition-all duration-200 hover:-translate-y-1  shadow-[10px_25px_50px_-5px_rgba(0,0,0,0.5)] `}
-            >
-              <div className="font-bold text-2xl text-center text-black">
-                <h5>{project.Title}</h5>
-              </div>
-              {/* <h3>{project.Skills}</h3> */}
-              <div className={`flex flex-wrap gap-2  `}>
-                {project.Skills.map((skill) => (
-                  <div
-                    className="flex items-center justify-center "
-                    key={skill}
-                  >
-                    <SmallBox>{skill}</SmallBox>
-                  </div>
-                ))}
-              </div>
-              <p className={styles.text}>{project.Description}</p>
-              <div className={styles.btn}>
-                {project.link !== '' && (
-                  <SmallButton>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex gap-1 items-center"
+          {projects
+            .slice(startIndex, startIndex + itemsToShow)
+            .map((project) => (
+              <div
+                key={project.Title}
+                className={`cursor-pointer  bg-[#f1e5e5] border-blue-600 flex-1 flex flex-col gap-4 rounded-2xl px-4 py-4  ${styles.items} hover:scale-100 hover:drop-shadow-xl transition-all duration-200 hover:-translate-y-1  shadow-[10px_25px_50px_-5px_rgba(0,0,0,0.5)] `}
+              >
+                <div className="font-bold text-2xl text-center text-black">
+                  <h5>{project.Title}</h5>
+                </div>
+                {/* <h3>{project.Skills}</h3> */}
+                <div className={`flex flex-wrap gap-2  `}>
+                  {project.Skills.map((skill) => (
+                    <div
+                      className="flex items-center justify-center "
+                      key={skill}
                     >
-                      <RiGitRepositoryLine size={18} />
-                      Project
-                    </a>
-                  </SmallButton>
-                )}
-                {project.page !== '' && (
-                  <SmallButton>
-                    <a
-                      href={project.page}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex gap-1 items-center"
-                    >
-                      <FaExternalLinkAlt size={15} />
-                      Website
-                    </a>
-                  </SmallButton>
-                )}
+                      <SmallBox>{skill}</SmallBox>
+                    </div>
+                  ))}
+                </div>
+                <p className={styles.text}>{project.Description}</p>
+                <div className={styles.btn}>
+                  {project.link !== '' && (
+                    <SmallButton>
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex gap-1 items-center"
+                      >
+                        <RiGitRepositoryLine size={18} />
+                        Project
+                      </a>
+                    </SmallButton>
+                  )}
+                  {project.page !== '' && (
+                    <SmallButton>
+                      <a
+                        href={project.page}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex gap-1 items-center"
+                      >
+                        <FaExternalLinkAlt size={15} />
+                        Website
+                      </a>
+                    </SmallButton>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
           <p
             className="transition-all duration-200 hover:-translate-x-[-.25rem] hover:scale-x-110  text-black"
             onClick={handleRightClick}

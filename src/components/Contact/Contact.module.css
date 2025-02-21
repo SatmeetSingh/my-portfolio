@@ -32,6 +32,10 @@
   .intro {
     width: 100%;
   }
+  .contactBox {
+    width: 96%;
+    margin-inline: 2%;
+  }
 }
 
 .img {

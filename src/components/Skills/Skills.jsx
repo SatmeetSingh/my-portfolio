@@ -92,7 +92,11 @@ function Skills() {
           <div className="absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl ">
             <p className="font-black text-4xl">
               <span className="text-[orange]">&lt;</span>
-              <span className={` ${Dark ? 'text-black' : 'text-black'}`}>
+              <span
+                className={` ${
+                  Dark ? 'text-black' : 'text-black'
+                } max-[500px]:text-[25px]`}
+              >
                 WebDevelopment
               </span>
               <span className="text-[orange]">/&gt;</span>

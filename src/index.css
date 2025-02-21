@@ -14,7 +14,6 @@ body {
 
 @media only screen and (max-width: 999px) {
   .btn1 {
-    width: 80%;
     font-size: 25px;
     padding-block: 8px;
   }

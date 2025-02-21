@@ -1,6 +1,6 @@
 import { MdContactMail } from 'react-icons/md';
 import styles from './Contact.module.css';
-import Button, { SmallButton } from '../../utils/Button';
+import { SmallButton } from '../../utils/Button';
 import { IoIosSend } from 'react-icons/io';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
@@ -106,7 +106,11 @@ function ContactMe() {
       <div className={styles.intro}>
         <p className="flex items-center justify-center gap-2">
           <span className="text-[Orange]">&lt;</span>
-          <MdContactMail size={25} />
+          <MdContactMail
+            size={25}
+            color={` ${Dark ? 'white' : 'black'} `}
+            opacity={0.7}
+          />
           <span className={` ${Dark ? 'text-white' : 'text-black'}`}>
             Get In Touch
           </span>
@@ -123,7 +127,7 @@ function ContactMe() {
               onSubmit={handleSubmit}
             >
               <div className="flex flex-col gap-1">
-                <label for="name" className="text-black">
+                <label htmlFor="name" className="text-black/70 font-bold">
                   Name:
                 </label>
                 <input
@@ -133,7 +137,7 @@ function ContactMe() {
                   placeholder="Name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="bg-slate-300 px-2 py-2 rounded-md"
+                  className="bg-slate-300 px-2 py-2 rounded-md text-black"
                 />
                 {errors.name && (
                   <PopMessage duration={5000}>{errors.name}</PopMessage>
@@ -141,7 +145,7 @@ function ContactMe() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <label for="email" className="text-black">
+                <label htmlFor="email" className="text-black/70 font-bold">
                   Email:
                 </label>
                 <input
@@ -152,7 +156,7 @@ function ContactMe() {
                   placeholder="Email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="bg-slate-300 px-2 py-2 rounded-md"
+                  className="bg-slate-300 px-2 py-2 rounded-md md text-black"
                 />
                 {errors.email && (
                   <PopMessage duration={5000}>{errors.email}</PopMessage>
@@ -160,7 +164,7 @@ function ContactMe() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <label for="phone" className="text-black">
+                <label htmlFor="phone" className="text-black/70 font-bold">
                   Phone:
                 </label>
                 <input
@@ -171,7 +175,7 @@ function ContactMe() {
                   placeholder="Phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="bg-slate-300 px-2 py-2 rounded-md"
+                  className="bg-slate-300 px-2 py-2 rounded-md md text-black"
                 />
                 {errors.phone && (
                   <PopMessage duration={5000}>{errors.phone}</PopMessage>
@@ -179,7 +183,7 @@ function ContactMe() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <label for="message" className="text-black">
+                <label htmlFor="message" className="text-black/70 font-bold">
                   Message:
                 </label>
                 <textarea
@@ -189,7 +193,7 @@ function ContactMe() {
                   placeholder="Message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="bg-slate-300 px-2 py-2 rounded-md"
+                  className="bg-slate-300 px-2 py-2 rounded-md md text-black"
                 />
                 {errors.message && (
                   <PopMessage duration={5000}>{errors.message}</PopMessage>
@@ -200,12 +204,14 @@ function ContactMe() {
                 Submit <IoIosSend size={20} />
               </SmallButton>
               {isSent && (
-                <PopMessage duration={5000}>
+                <div className=" text-slate-700 text-xl font-semibold px-3 py-4 rounded-md  transition-opacity duration-500 ease-in-out">
                   Your message has been sent successfully!
-                </PopMessage>
+                </div>
               )}
               {isError && (
-                <PopMessage duration={5000}>{errorMessage}</PopMessage>
+                <div className=" text-slate-700 text-xl font-semibold px-3 py-4 rounded-md  transition-opacity duration-500 ease-in-out">
+                  {errorMessage}
+                </div>
               )}
             </form>
           </div>

@@ -52,7 +52,7 @@
 }
 
 .name {
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bolder;
   display: flex;
   gap: 20px;
@@ -129,8 +129,7 @@
     display: none;
   }
   .btn {
-    flex-direction: column;
-    width: 99vw;
+    flex-direction: row;
   }
   .img {
     transform: scale(1.1);
@@ -161,45 +160,69 @@
   margin-top: 20px;
 }
 
-.bg {
-  background: url('/images/code.jpg');
-  height: 70vh;
+.quoteContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  margin-top: 60px;
-  transform: rotateZ(-5deg);
-  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.bg {
+  background: url('/images/code.jpg') no-repeat center center/cover;
+  height: 60vh;
+  width: 100%;
+  margin-top: 40px;
+  transform: rotateZ(-4deg);
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
   position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blur {
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 100%;
   flex-direction: column;
+  text-align: center;
+  padding: 20px;
 }
 
 .blur p {
-  transform: rotateZ(5deg);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-inline: 10%;
-  font-size: 35px;
-  font-weight: bolder;
-  margin-top: 60px;
+  font-size: 28px;
+  font-weight: bold;
+  max-width: 80%;
+  transform: rotateZ(3deg);
+  position: relative;
+  margin: 0 auto;
 }
 
-@media only screen and (min-width: 999px) {
+@media (max-width: 768px) {
+  .bg {
+    height: 50vh;
+    width: 95%;
+    transform: rotateZ(-2deg);
+  }
+
   .blur p {
-    font-size: 50px;
-    margin-top: 60px;
+    font-size: 22px;
   }
 }
-.blur h3 {
-  transform: rotateZ(5deg);
-  margin-top: 30px;
-  font-size: 25px;
-  color: rgb(170, 164, 164);
+
+@media (max-width: 480px) {
+  .bg {
+    height: 40vh;
+    width: 100%;
+    transform: rotateZ(-1deg);
+  }
+
+  .blur p {
+    font-size: 18px;
+    max-width: 90%;
+  }
 }

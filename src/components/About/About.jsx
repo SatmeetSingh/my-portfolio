@@ -7,13 +7,13 @@ function About() {
   return (
     <div
       className={`${styles.about}
-         ${Dark ? 'bg-white/65 text-black' : 'bg-[#222222] text-white'}
+         ${Dark ? 'bg-[#222222] text-white' : 'bg-white/65 text-black'}
          `}
     >
       <div className={styles.intro}>
         <p>
           <span className="text-[Orange]">&lt;</span>
-          <span className={` ${Dark ? 'text-black ' : 'text-white'}`}>
+          <span className={` ${Dark ? 'text-white' : 'text-black '}`}>
             About Me
           </span>
           <span className="text-[Orange]">/&gt;</span>
@@ -40,10 +40,16 @@ function About() {
           </div>
           <div>
             <h4>
-              <span className="text-[Blue]">Email: </span>satmeetarora@gmail.com
+              <span className={` ${Dark ? 'text-blue-300' : 'text-[Blue]'}`}>
+                Email :{' '}
+              </span>
+              satmeetarora@gmail.com
             </h4>
             <h4>
-              <span className="text-[Blue]">Place: </span>Ludhiana, India-141013
+              <span className={` ${Dark ? 'text-blue-300' : 'text-[Blue]'}`}>
+                Place :{' '}
+              </span>
+              Ludhiana, India-141013
             </h4>
           </div>
           <SmallButton>

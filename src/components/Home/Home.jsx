@@ -10,6 +10,8 @@ import About from '../About/About';
 import ContactMe from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import { Link } from 'react-scroll';
+import ExperienceEducation from '../Experience/ExpPage';
+import { Outlet } from 'react-router-dom';
 
 function Home() {
   return (
@@ -59,7 +61,7 @@ function Home() {
           >
             <Button>
               <CiMail size={25} />
-              <p>Contact me</p>
+              <div className="max-[999px]:hidden">Contact me</div>
             </Button>
           </Link>
           <Link
@@ -70,22 +72,26 @@ function Home() {
           >
             <Button>
               <FiGithub />
-              <p>My Projects</p>
+              <div className="max-[999px]:hidden">My Projects</div>
             </Button>
           </Link>
         </div>
       </div>
 
       <Quote />
+      <section id="about">
+        <About />
+      </section>
       <section id="skills">
         <Skills />
       </section>
       <section id="project">
         <Project />
       </section>
-      <section id="about">
-        <About />
+      <section id="experience">
+        <ExperienceEducation />
       </section>
+      <Outlet />
       <section id="contact">
         <ContactMe />
       </section>
